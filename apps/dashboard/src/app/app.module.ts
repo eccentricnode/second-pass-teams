@@ -12,9 +12,10 @@ import { MaterialModule } from '@second-pass/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing.module';
 import { LoginComponent } from './login/login.component';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, TeamsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
