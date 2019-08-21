@@ -22,7 +22,6 @@ export class LoadTeams implements Action {
   constructor() { }
 }
 
-
 export class TeamsLoaded implements Action {
   readonly type = TeamsActionTypes.TEAMS_LOADED;
   constructor(public payload: Team[]) { }

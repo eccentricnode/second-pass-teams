@@ -21,6 +21,9 @@ export class TeamsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.teamsFacade.loadTeams();
+    this.initForm();
+    this.reset();
   }
 
   selectTeam(team) {

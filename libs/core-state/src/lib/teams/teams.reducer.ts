@@ -15,7 +15,7 @@ export const initialState: TeamsState = adapter.getInitialState({
 export function teamsReducer(state: TeamsState = initialState, action: TeamsAction): TeamsState {
   switch (action.type) {
     case TeamsActionTypes.TEAM_SELECTED: {
-      return Object.assign({}, state, { selectedTeamsId: action.payload });
+      return Object.assign({}, state, { selectedTeamId: action.payload });
     }
 
     case TeamsActionTypes.TEAMS_LOADED: {
