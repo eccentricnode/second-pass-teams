@@ -1,1 +1,16 @@
-<p>teams works!</p>
+<div class="wrapper">
+    <div class="list-grid">
+        <second-pass-teams-list
+            [teams]="teams$ | async"
+            (selected)="selectTeam($event)">
+        </second-pass-teams-list>>
+    </div>
+
+    <div class="details-grid">
+        <second-pass-team-details
+            [group]="form"
+            [team]="selectedTeam$ | async"
+            (resetForm)="reset($event)">
+        </second-pass-team-details>
+    </div>
+</div>

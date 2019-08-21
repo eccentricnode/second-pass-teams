@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-content>
+        <h3 mat-subheader>Teams</h3>
+        <mat-list *ngIf="teams.length; else elseBlock">
+            <mat-list-item *ngFor="let team of teams" class="mat-list-option"
+                (click)="select(team)">
+                <h4 mat-line>{{team.name}}</h4>
+            </mat-list-item>
+        </mat-list>
+        <ng-template #elseBlock>
+            <div class="spinner">
+                <mat-spinner mode="indeterminate"></mat-spinner>
+            </div>
+        </ng-template>
+    </mat-card-content>
+</mat-card>

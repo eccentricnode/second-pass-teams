@@ -13,9 +13,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing.module';
 import { LoginComponent } from './login/login.component';
 import { TeamsComponent } from './teams/teams.component';
+import { TeamsListComponent } from './teams/teams-list/teams-list.component';
+import { TeamDetailsComponent } from './teams/team-details/team-details.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, TeamsComponent],
+  declarations: [AppComponent, LoginComponent, TeamsComponent, TeamsListComponent, TeamDetailsComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
